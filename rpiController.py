@@ -5,7 +5,7 @@
 # (includes RPi.GPIO to control the fan, pyrebase to access firebase and sleep functions)
 
 import RPi.GPIO as GPIO
-import pyrebase
+import pyrebase4
 from time import sleep
 
 
