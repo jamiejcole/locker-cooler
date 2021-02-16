@@ -5,7 +5,7 @@
 # (includes RPi.GPIO to control the fan, pyrebase to access firebase and sleep functions)
 
 import RPi.GPIO as GPIO
-import pyrebase
+import pyrebase4
 from time import sleep
 
 
@@ -23,6 +23,10 @@ db = firebase.database()
 fanStatus = "False"
 init = True
 fan = 5
+
+GPIO.setmode(DPIO.BCM)
+GPIO.setup(channel, GPIO.OUT)
+
 
 ## Setting up the firebase listener and fan control ##
 def stream_handler(message):
