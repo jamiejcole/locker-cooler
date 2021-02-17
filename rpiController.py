@@ -10,11 +10,12 @@ from time import sleep
 
 
 ## Initialising Variables and perfoming configs ##
+# APIs removed for security.
 config = {
-  "apiKey": "AIzaSyBvm2pyA-6171fBtjubGKXfQkEDAJi2yWQ",
-  "authDomain": "lockerserver-e567b.firebaseapp.com",
-  "databaseURL": "https://lockerserver-e567b-default-rtdb.firebaseio.com",
-  "storageBucket": "lockerserver-e567b.appspot.com"
+  "apiKey": ""
+  "authDomain": ""
+  "databaseURL": ""
+  "storageBucket": ""
 }
 
 firebase = pyrebase.initialize_app(config)
